@@ -1,0 +1,164 @@
+/* I WANNA TRY AND ADD A PAINT SPLATTER BACKGROUND OR MAYBE A SPACE BACKGROUND THAT WOULD BE SOO COOL!!! */
+
+
+
+
+/* this is just a simple body tag */
+body {
+    text-align: center;
+    font-family: arial;
+}
+/* this is so the input buttons dont show on screen, we create our own label buttons */
+input {
+    display: none;
+}
+
+/* This is for changing the filter labels */
+.tag {
+    font-size: 1.4rem;
+    margin: 1.5rem, 0rem;
+    padding: 5px, 1.8rem;
+    border-radius: 50px;
+    background-color: #efefef;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    border: solid 1px #ccc;
+}
+
+
+/* this is for changing the circles */
+/* we can change their shape color brightness and everything here.  */
+img {
+
+    margin-top: 5%;
+    border-radius: 50%;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #00dafc, inset -20px 0 80px #00dafc, inset 20px 0 300px #00dafc, inset -20px 0 300px #00dafc, 0 0 50px #fff, -10px 0 80px #00dafc, 10px 0 80px #00dafc; */
+    box-shadow:  5px 5px 25px 5px #00dafc;
+    -webkit-filter: brightness(25%);
+
+}
+/* Same thing here this is got changing the circles but when you hoiver on them, its set to where theres a box shadow, we turn up the brightnexx to 100, and we transition the box shadow changing color! WHICH IS AWESOME! */
+/* This is so when we hover on the javascript project we change the color of the glow shadow we created */
+img:hover{
+    box-shadow: 5px 5px 25px 5px #fc003f;
+     /* width: 300px;
+    height: 300px;
+    transition: height 0.75s;
+    transition: width 0.75s; */
+    -webkit-filter: brightness(100%);
+    transition: box-shadow 1s;
+/* AHHHH I MESSED AROUND WITH IT AND I LEARNED WE CAN TRANSITION THE BOX SHADOWS TOO THATS SOO AMAZING! AT FIRST I HAD IT SET TO TRANSITIONB THE BRIGHTNESS SO AS THE NAME DISSAPEARS IT GETS BRIGHTER AND YOU CAN SEE THE IMAGE. */
+    background-color:white;
+    
+
+    transform: rotate(360deg);
+    transition: 0.75s;
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+}
+
+
+
+
+
+/* This basically says when the filter button chose is not the one we selected, were going to set their width and height to 0 so they dissapear. Im sure we can do display: none; too, nvm ill just try it AND YES WE CAN! */
+#Arduino:checked~.images>img:not([class *="Arduino"]),
+#WpShopify:checked~.images>img:not([class *="WpShopify"]),
+#JavaScript:checked~.images>img:not([class *="JavaScript"]) {
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* This is for the name of your portfolio or page that needs filtering */
+h2.name{
+    box-shadow: 5px 5px 25px 5px #000;
+}
+
+/* this is for your logo if you have an image. it didnt turn out to well so im leaving it here */
+/* .logo{
+    width:100px;
+    height:100px;
+position: inline;
+float:left;
+display:inline;
+ 
+} */
+
+/* This is for the top right Text in the menu */
+.top-right{
+    float:left;
+    text-align: center;
+    box-shadow: 5px 5px 25px 5px #000;
+    font-size: 1.5rem;
+}
+/* this is for the links in the menu */
+.links{
+    float:right;
+    color:black;
+    display:inline;
+    padding:5px 5% 5px 10px;
+    box-shadow: 5px 5px 25px 5px #000;
+
+}
+
+/* This is when you hover the links in the menu */
+.links:hover{
+color:#00dafc;
+
+}
+/* These next few css bits are for the menu links and their colors changing. align their position and change their font size when hovered or not. IDK i just thought it gave the page a little more animation. Working with 6 months of CSS knowledge im doing what I can. I got them to grow on transition but it made the page jittery. */
+.individual-menu-links{
+    padding: 1%;
+    font-size: 14px;
+    float:center;
+
+}
+.individual-menu-links:hover{
+    color:black;
+    font-size: 18px;
+
+}
+.individual-menu-links:active{
+    color:black;
+}
+.individual-menu-links:visited{
+
+    color:black;
+}
+
+
+/* this is for the menu i dont see a much bigger difference but its here and im keeping it. Ask me why? I wont have an answer. I just feel comfortable with it here. Maybe it will change if I add more items in the menu? Im not sure? */
+.menu{
+    display:inline;
+}
+
+
+/* This is for the filter button */
+label{
+    margin: 5px;
+    padding: 5px;  box-shadow: 3px 3px 20px 3px #000;
+}
+
+label.tag:hover{
+    box-shadow: 5px 5px 25px 5px #fc003f;
+
+    transition: box-shadow .25s;
+}
+
+
+

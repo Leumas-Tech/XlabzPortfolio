@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fcfcfc;
+    font-family: sans-serif;
+}
+
+footer{
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #212323;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+    
+}
+.footer-mats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-mats h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+ 
+}
+
+.footer-mats p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #efefef;
+
+}
+
+
+
+
+/* These next few lines will affect the footer bottom ( which holds the copyrights and some quick links */
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+/* This will change the copyyright for example */
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+ /* This will change the business name */
+ .footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+ }
+
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+
+
+ /* footer menu are the four quick links we have set below */
+ .footer-menu{
+    float: right;
+
+  }
+  /* this ensure that the links stay horizontal inline */
+  .footer-menu ul{
+    display: flex;
+  }
+  
+  .footer-menu ul li{
+  padding-right: 5px;
+  display: block;
+  }
+  /* we set the color of our links */
+  .footer-menu ul li a{
+    color: #efefef;
+    text-decoration: none;
+  }
+  /* and what happens to our footer links when we hover over them */
+  .footer-menu ul li a:hover{
+    color: #00dafc;
+  }
+
+
+  /* And then a reccomended media quiery for phones */
+  @media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    }
+
+    .left{
+      float:left;
+    }
+    .right{
+      float:right;
+    }
